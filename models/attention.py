@@ -52,6 +52,7 @@ Tensor = torch.Tensor
 
 from torch.nn.functional import linear, pad, softmax, dropout
 
+
 class MultiheadAttention(Module):
     r"""Allows the model to jointly attend to information
     from different representation subspaces.

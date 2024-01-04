@@ -18,12 +18,12 @@ import numpy as np
 import torch
 from torch.utils.data import DataLoader, DistributedSampler
 
-import datasets
-import util.misc as utils
-import datasets.samplers as samplers
-from datasets import build_dataset, get_coco_api_from_dataset
-from engine import evaluate, train_one_epoch
-from models import build_model
+from dela_cond_detr import datasets
+import dela_cond_detr.util.misc as utils
+import dela_cond_detr.datasets.samplers as samplers
+from dela_cond_detr.datasets import build_dataset, get_coco_api_from_dataset
+from dela_cond_detr.engine import evaluate, train_one_epoch
+from dela_cond_detr.models import build_model
 
 import os
 import wandb

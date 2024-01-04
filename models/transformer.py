@@ -16,8 +16,8 @@ import torch.nn.functional as F
 from torch import nn, Tensor
 from .attention import MultiheadAttention
 
-from util import box_ops
-from util.misc import inverse_sigmoid
+from dela_cond_detr.util import box_ops
+from dela_cond_detr.util.misc import inverse_sigmoid
 
 from detectron2.structures import Boxes
 from detectron2.modeling.poolers import ROIPooler

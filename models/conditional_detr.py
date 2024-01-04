@@ -17,16 +17,16 @@ import torch.nn.functional as F
 from torch import nn
 
 from torchvision.ops import batched_nms
-from util import box_ops
-from util.misc import (NestedTensor, nested_tensor_from_tensor_list,
+from dela_cond_detr.util import box_ops
+from dela_cond_detr.util.misc import (NestedTensor, nested_tensor_from_tensor_list,
                        accuracy, get_world_size, interpolate,
                        is_dist_avail_and_initialized, inverse_sigmoid)
 
-from .backbone import build_backbone
-from .matcher import build_matcher
-from .segmentation import (DETRsegm, PostProcessPanoptic, PostProcessSegm,
+from dela_cond_detr.models.backbone import build_backbone
+from dela_cond_detr.models.matcher import build_matcher
+from dela_cond_detr.models.segmentation import (DETRsegm, PostProcessPanoptic, PostProcessSegm,
                            dice_loss, sigmoid_focal_loss)
-from .transformer import build_transformer
+from dela_cond_detr.models.transformer import build_transformer
 
 
 def _get_clones(module, N):
